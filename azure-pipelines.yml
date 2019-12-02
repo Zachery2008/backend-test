@@ -22,7 +22,7 @@ steps:
 
 - task: ArchiveFiles@1
   inputs:
-    rootFolderOrFile: '/*'
+    rootFolderOrFile: ''
     includeRootFolder: false
     archiveType: 'zip'
     archiveFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
