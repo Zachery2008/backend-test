@@ -25,10 +25,10 @@ steps:
 
 - task: ArchiveFiles@1
   inputs:
-    rootFolderOrFile: './**/*'
+    rootFolderOrFile: '$(Build.SourcesDirectory)'
     includeRootFolder: false
     archiveType: 'zip'
-    archiveFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
+    archiveFile: '$(Build.ArtifactStagingDirectory)/backend-test.zip'
     replaceExistingArchive: true
 
 - task: PublishBuildArtifacts@1
